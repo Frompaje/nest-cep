@@ -109,12 +109,8 @@ export class CsvCepRepository {
     ];
 
     for (const candidate of candidates) {
-      try {
-        await fs.access(candidate);
-        return candidate;
-      } catch {
-        continue;
-      }
+      await fs.access(candidate);
+      return candidate;
     }
 
     throw new Error('Arquivo cep-aberto.csv nao encontrado');

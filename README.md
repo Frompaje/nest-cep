@@ -1,6 +1,11 @@
 ## Instruções de instalação
 
 ```bash
+git clone <url-do-repositorio>
+cd nest-cep
+```
+
+```bash
 npm install
 ```
 

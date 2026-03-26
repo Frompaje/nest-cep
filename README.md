@@ -46,6 +46,19 @@ Validações esperadas:
 - `400` para parâmetros inválidos (`cep` inválido, `raioKm <= 0`)
 - `404` para CEP inexistente na base
 
+## Testar com o frontend React
+
+Para testar a busca no navegador, você pode usar o frontend do projeto [`Frompaje/react-cep`](https://github.com/Frompaje/react-cep).
+
+1. Inicie a API do Nest.
+2. No projeto React, configure a variável `VITE_API_URL` apontando para o backend:
+
+```env
+VITE_API_URL=http://localhost:3000
+```
+
+3. Inicie o frontend e use a tela de busca.
+
 ## CEPs disponíveis para teste
 
 Use qualquer um destes CEPs no parâmetro `cep`:
